@@ -1,0 +1,1420 @@
+{
+  "meta": {
+    "regions": 68,
+    "sanctuaries": 45,
+    "sanctuary_scan_to_tile": {
+      "sanctuary_01": 39,
+      "sanctuary_02": 26,
+      "sanctuary_03": 40,
+      "sanctuary_04": 10,
+      "sanctuary_05": 32,
+      "sanctuary_06": 17,
+      "sanctuary_07": 9,
+      "sanctuary_08": 44,
+      "sanctuary_09": 16,
+      "sanctuary_10": 22,
+      "sanctuary_11": 45,
+      "sanctuary_12": 27,
+      "sanctuary_13": 28,
+      "sanctuary_14": 29,
+      "sanctuary_15": 35,
+      "sanctuary_16": 19,
+      "sanctuary_17": 11,
+      "sanctuary_18": 12,
+      "sanctuary_19": 23,
+      "sanctuary_20": 1,
+      "sanctuary_21": 2,
+      "sanctuary_22": 33,
+      "sanctuary_23": 18,
+      "sanctuary_24": 41,
+      "sanctuary_25": 36,
+      "sanctuary_26": 3,
+      "sanctuary_27": 13,
+      "sanctuary_28": 4,
+      "sanctuary_29": 5,
+      "sanctuary_30": 24,
+      "sanctuary_31": 30,
+      "sanctuary_32": 14,
+      "sanctuary_33": 37,
+      "sanctuary_34": 25,
+      "sanctuary_35": 6,
+      "sanctuary_36": 20,
+      "sanctuary_37": 15,
+      "sanctuary_38": 7,
+      "sanctuary_39": 42,
+      "sanctuary_40": 31,
+      "sanctuary_41": 34,
+      "sanctuary_42": 43,
+      "sanctuary_43": 38,
+      "sanctuary_44": 8,
+      "sanctuary_45": 21
+    },
+    "source": "saifahn/faraway-cards base set, images from local scans"
+  },
+  "regions": [
+    {
+      "number": 1,
+      "biome": "red",
+      "wonders": {
+        "stone": 1,
+        "chimera": 1
+      },
+      "id": "R01",
+      "image": "/assets/regions/region_01.jpg"
+    },
+    {
+      "number": 2,
+      "biome": "blue",
+      "wonders": {
+        "stone": 2
+      },
+      "id": "R02",
+      "image": "/assets/regions/region_02.jpg"
+    },
+    {
+      "number": 3,
+      "biome": "green",
+      "fame": 4,
+      "id": "R03",
+      "image": "/assets/regions/region_03.jpg"
+    },
+    {
+      "number": 4,
+      "biome": "red",
+      "wonders": {
+        "stone": 1,
+        "chimera": 1
+      },
+      "id": "R04",
+      "image": "/assets/regions/region_04.jpg"
+    },
+    {
+      "number": 5,
+      "biome": "green",
+      "wonders": {
+        "chimera": 1
+      },
+      "id": "R05",
+      "image": "/assets/regions/region_05.jpg"
+    },
+    {
+      "number": 6,
+      "biome": "blue",
+      "clue": true,
+      "wonders": {
+        "stone": 1
+      },
+      "id": "R06",
+      "image": "/assets/regions/region_06.jpg"
+    },
+    {
+      "number": 7,
+      "biome": "red",
+      "wonders": {
+        "chimera": 1,
+        "thistle": 1
+      },
+      "id": "R07",
+      "image": "/assets/regions/region_07.jpg"
+    },
+    {
+      "number": 8,
+      "biome": "green",
+      "clue": true,
+      "wonders": {
+        "chimera": 1
+      },
+      "id": "R08",
+      "image": "/assets/regions/region_08.jpg"
+    },
+    {
+      "number": 9,
+      "biome": "blue",
+      "fame": 5,
+      "id": "R09",
+      "image": "/assets/regions/region_09.jpg"
+    },
+    {
+      "number": 10,
+      "biome": "red",
+      "fame": {
+        "per": "night",
+        "score": 3
+      },
+      "id": "R10",
+      "image": "/assets/regions/region_10.jpg"
+    },
+    {
+      "number": 11,
+      "biome": "green",
+      "fame": {
+        "per": "clue",
+        "score": 3
+      },
+      "id": "R11",
+      "image": "/assets/regions/region_11.jpg"
+    },
+    {
+      "number": 12,
+      "biome": "yellow",
+      "clue": true,
+      "wonders": {
+        "thistle": 1
+      },
+      "id": "R12",
+      "image": "/assets/regions/region_12.jpg"
+    },
+    {
+      "number": 13,
+      "biome": "blue",
+      "fame": {
+        "per": "stone",
+        "score": 2
+      },
+      "id": "R13",
+      "image": "/assets/regions/region_13.jpg"
+    },
+    {
+      "number": 14,
+      "biome": "red",
+      "fame": {
+        "per": "night",
+        "score": 2
+      },
+      "id": "R14",
+      "image": "/assets/regions/region_14.jpg",
+      "wonders": {
+        "thistle": 1
+      }
+    },
+    {
+      "number": 15,
+      "biome": "green",
+      "clue": true,
+      "fame": {
+        "per": "chimera",
+        "score": 2
+      },
+      "id": "R15",
+      "image": "/assets/regions/region_15.jpg"
+    },
+    {
+      "number": 16,
+      "biome": "red",
+      "wonders": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "chimera",
+        "score": 2
+      },
+      "id": "R16",
+      "image": "/assets/regions/region_16.jpg"
+    },
+    {
+      "number": 17,
+      "biome": "blue",
+      "wonders": {
+        "stone": 1
+      },
+      "quest": {
+        "chimera": 2
+      },
+      "fame": {
+        "per": "stone",
+        "score": 3
+      },
+      "id": "R17",
+      "image": "/assets/regions/region_17.jpg"
+    },
+    {
+      "number": 18,
+      "biome": "green",
+      "wonders": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "wonderSet",
+        "score": 10
+      },
+      "id": "R18",
+      "image": "/assets/regions/region_18.jpg"
+    },
+    {
+      "number": 19,
+      "biome": "red",
+      "wonders": {
+        "thistle": 1
+      },
+      "fame": {
+        "per": "thistle",
+        "score": 2
+      },
+      "id": "R19",
+      "image": "/assets/regions/region_19.jpg"
+    },
+    {
+      "number": 20,
+      "biome": "green",
+      "night": true,
+      "clue": true,
+      "quest": {
+        "stone": 1
+      },
+      "fame": {
+        "per": "night",
+        "score": 2
+      },
+      "id": "R20",
+      "image": "/assets/regions/region_20.jpg"
+    },
+    {
+      "number": 21,
+      "biome": "blue",
+      "night": true,
+      "quest": {
+        "stone": 2
+      },
+      "fame": 8,
+      "id": "R21",
+      "image": "/assets/regions/region_21.jpg"
+    },
+    {
+      "number": 22,
+      "biome": "green",
+      "night": true,
+      "clue": true,
+      "fame": {
+        "per": "clue",
+        "score": 1
+      },
+      "id": "R22",
+      "image": "/assets/regions/region_22.jpg"
+    },
+    {
+      "number": 23,
+      "biome": "red",
+      "night": true,
+      "wonders": {
+        "stone": 1,
+        "chimera": 1
+      },
+      "fame": {
+        "per": "colorSet",
+        "score": 10
+      },
+      "id": "R23",
+      "image": "/assets/regions/region_23.jpg"
+    },
+    {
+      "number": 24,
+      "biome": "blue",
+      "night": true,
+      "wonders": {
+        "stone": 1
+      },
+      "quest": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "night",
+        "score": 2
+      },
+      "id": "R24",
+      "image": "/assets/regions/region_24.jpg"
+    },
+    {
+      "number": 25,
+      "biome": "yellow",
+      "night": true,
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "green"
+        },
+        "score": 1
+      },
+      "id": "R25",
+      "image": "/assets/regions/region_25.jpg"
+    },
+    {
+      "number": 26,
+      "biome": "red",
+      "night": true,
+      "wonders": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "thistle",
+        "score": 3
+      },
+      "id": "R26",
+      "image": "/assets/regions/region_26.jpg"
+    },
+    {
+      "number": 27,
+      "biome": "yellow",
+      "night": true,
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "blue"
+        },
+        "score": 1
+      },
+      "id": "R27",
+      "image": "/assets/regions/region_27.jpg"
+    },
+    {
+      "number": 28,
+      "biome": "red",
+      "night": true,
+      "wonders": {
+        "stone": 1
+      },
+      "fame": {
+        "per": "chimera",
+        "score": 3
+      },
+      "id": "R28",
+      "image": "/assets/regions/region_28.jpg"
+    },
+    {
+      "number": 29,
+      "biome": "yellow",
+      "night": true,
+      "wonders": {
+        "thistle": 1
+      },
+      "fame": {
+        "per": "thistle",
+        "score": 2
+      },
+      "id": "R29",
+      "image": "/assets/regions/region_29.jpg"
+    },
+    {
+      "number": 30,
+      "biome": "red",
+      "night": true,
+      "wonders": {
+        "stone": 1
+      },
+      "fame": {
+        "per": "stone",
+        "score": 2
+      },
+      "id": "R30",
+      "image": "/assets/regions/region_30.jpg"
+    },
+    {
+      "number": 31,
+      "biome": "yellow",
+      "night": true,
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "red"
+        },
+        "score": 1
+      },
+      "id": "R31",
+      "image": "/assets/regions/region_31.jpg"
+    },
+    {
+      "number": 32,
+      "biome": "red",
+      "night": true,
+      "wonders": {
+        "stone": 1,
+        "chimera": 1
+      },
+      "quest": {
+        "stone": 3
+      },
+      "fame": 7,
+      "id": "R32",
+      "image": "/assets/regions/region_32.jpg"
+    },
+    {
+      "number": 33,
+      "biome": "yellow",
+      "night": true,
+      "clue": true,
+      "fame": {
+        "per": "thistle",
+        "score": 3
+      },
+      "id": "R33",
+      "image": "/assets/regions/region_33.jpg"
+    },
+    {
+      "number": 34,
+      "biome": "green",
+      "night": true,
+      "wonders": {
+        "chimera": 1
+      },
+      "quest": {
+        "stone": 2
+      },
+      "fame": {
+        "per": "chimera",
+        "score": 3
+      },
+      "id": "R34",
+      "image": "/assets/regions/region_34.jpg"
+    },
+    {
+      "number": 35,
+      "biome": "yellow",
+      "night": true,
+      "wonders": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "colorSet",
+        "score": 10
+      },
+      "id": "R35",
+      "image": "/assets/regions/region_35.jpg"
+    },
+    {
+      "number": 36,
+      "biome": "red",
+      "night": true,
+      "quest": {
+        "chimera": 2
+      },
+      "fame": {
+        "per": "thistle",
+        "score": 4
+      },
+      "id": "R36",
+      "image": "/assets/regions/region_36.jpg"
+    },
+    {
+      "number": 37,
+      "biome": "yellow",
+      "night": true,
+      "quest": {
+        "thistle": 1
+      },
+      "fame": {
+        "per": "night",
+        "score": 3
+      },
+      "id": "R37",
+      "image": "/assets/regions/region_37.jpg"
+    },
+    {
+      "number": 38,
+      "biome": "green",
+      "night": true,
+      "quest": {
+        "chimera": 1,
+        "thistle": 1
+      },
+      "fame": {
+        "per": "clue",
+        "score": 3
+      },
+      "id": "R38",
+      "image": "/assets/regions/region_38.jpg"
+    },
+    {
+      "number": 39,
+      "biome": "red",
+      "night": true,
+      "wonders": {
+        "stone": 1,
+        "thistle": 1
+      },
+      "quest": {
+        "chimera": 2
+      },
+      "fame": 9,
+      "id": "R39",
+      "image": "/assets/regions/region_39.jpg"
+    },
+    {
+      "number": 40,
+      "biome": "blue",
+      "night": true,
+      "quest": {
+        "stone": 1,
+        "chimera": 1,
+        "thistle": 1
+      },
+      "fame": {
+        "per": "night",
+        "score": 10
+      },
+      "id": "R40",
+      "image": "/assets/regions/region_40.jpg"
+    },
+    {
+      "number": 41,
+      "biome": "green",
+      "wonders": {
+        "thistle": 1
+      },
+      "quest": {
+        "stone": 2,
+        "chimera": 1
+      },
+      "fame": {
+        "per": "night",
+        "score": 4
+      },
+      "id": "R41",
+      "image": "/assets/regions/region_41.jpg"
+    },
+    {
+      "number": 42,
+      "biome": "yellow",
+      "quest": {
+        "stone": 1,
+        "chimera": 1
+      },
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "green"
+        },
+        "score": 2
+      },
+      "id": "R42",
+      "image": "/assets/regions/region_42.jpg"
+    },
+    {
+      "number": 43,
+      "biome": "blue",
+      "wonders": {
+        "stone": 1
+      },
+      "fame": {
+        "per": "colorSet",
+        "score": 10
+      },
+      "id": "R43",
+      "image": "/assets/regions/region_43.jpg"
+    },
+    {
+      "number": 44,
+      "biome": "yellow",
+      "quest": {
+        "stone": 1,
+        "thistle": 1
+      },
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "blue"
+        },
+        "score": 2
+      },
+      "id": "R44",
+      "image": "/assets/regions/region_44.jpg"
+    },
+    {
+      "number": 45,
+      "biome": "green",
+      "wonders": {
+        "stone": 1
+      },
+      "quest": {
+        "chimera": 3
+      },
+      "fame": 13,
+      "id": "R45",
+      "image": "/assets/regions/region_45.jpg"
+    },
+    {
+      "number": 46,
+      "biome": "blue",
+      "clue": true,
+      "quest": {
+        "stone": 2,
+        "chimera": 1
+      },
+      "fame": 10,
+      "id": "R46",
+      "image": "/assets/regions/region_46.jpg"
+    },
+    {
+      "number": 47,
+      "biome": "yellow",
+      "quest": {
+        "thistle": 1,
+        "chimera": 1
+      },
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "red"
+        },
+        "score": 2
+      },
+      "id": "R47",
+      "image": "/assets/regions/region_47.jpg"
+    },
+    {
+      "number": 48,
+      "biome": "red",
+      "wonders": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "stone",
+        "score": 3
+      },
+      "id": "R48",
+      "image": "/assets/regions/region_48.jpg"
+    },
+    {
+      "number": 49,
+      "biome": "blue",
+      "clue": true,
+      "quest": {
+        "stone": 2,
+        "thistle": 1
+      },
+      "fame": 12,
+      "id": "R49",
+      "image": "/assets/regions/region_49.jpg"
+    },
+    {
+      "number": 50,
+      "biome": "yellow",
+      "wonders": {
+        "stone": 1
+      },
+      "quest": {
+        "thistle": 2
+      },
+      "fame": {
+        "per": "green",
+        "score": 4
+      },
+      "id": "R50",
+      "image": "/assets/regions/region_50.jpg"
+    },
+    {
+      "number": 51,
+      "biome": "blue",
+      "wonders": {
+        "stone": 1
+      },
+      "quest": {
+        "stone": 4
+      },
+      "fame": 14,
+      "id": "R51",
+      "image": "/assets/regions/region_51.jpg"
+    },
+    {
+      "number": 52,
+      "biome": "red",
+      "quest": {
+        "stone": 3
+      },
+      "fame": {
+        "per": "chimera",
+        "score": 4
+      },
+      "id": "R52",
+      "image": "/assets/regions/region_52.jpg"
+    },
+    {
+      "number": 53,
+      "biome": "yellow",
+      "wonders": {
+        "chimera": 1
+      },
+      "quest": {
+        "thistle": 2
+      },
+      "fame": {
+        "per": "red",
+        "score": 4
+      },
+      "id": "R53",
+      "image": "/assets/regions/region_53.jpg"
+    },
+    {
+      "number": 54,
+      "biome": "green",
+      "wonders": {
+        "chimera": 1
+      },
+      "quest": {
+        "thistle": 2
+      },
+      "fame": {
+        "per": "clue",
+        "score": 4
+      },
+      "id": "R54",
+      "image": "/assets/regions/region_54.jpg"
+    },
+    {
+      "number": 55,
+      "biome": "blue",
+      "clue": true,
+      "wonders": {
+        "stone": 1
+      },
+      "quest": {
+        "chimera": 1,
+        "thistle": 2
+      },
+      "fame": {
+        "per": "thistle",
+        "score": 3
+      },
+      "id": "R55",
+      "image": "/assets/regions/region_55.jpg"
+    },
+    {
+      "number": 56,
+      "biome": "yellow",
+      "wonders": {
+        "thistle": 1
+      },
+      "quest": {
+        "stone": 1,
+        "chimera": 2
+      },
+      "fame": {
+        "per": "blue",
+        "score": 4
+      },
+      "id": "R56",
+      "image": "/assets/regions/region_56.jpg"
+    },
+    {
+      "number": 57,
+      "biome": "red",
+      "quest": {
+        "thistle": 3
+      },
+      "fame": {
+        "per": "stone",
+        "score": 4
+      },
+      "id": "R57",
+      "image": "/assets/regions/region_57.jpg"
+    },
+    {
+      "number": 58,
+      "biome": "green",
+      "clue": true,
+      "quest": {
+        "chimera": 3
+      },
+      "fame": {
+        "per": "clue",
+        "score": 3
+      },
+      "id": "R58",
+      "image": "/assets/regions/region_58.jpg"
+    },
+    {
+      "number": 59,
+      "biome": "yellow",
+      "clue": true,
+      "quest": {
+        "stone": 1,
+        "chimera": 3
+      },
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "red"
+        },
+        "score": 3
+      },
+      "id": "R59",
+      "image": "/assets/regions/region_59.jpg"
+    },
+    {
+      "number": 60,
+      "biome": "blue",
+      "clue": true,
+      "quest": {
+        "stone": 2,
+        "chimera": 2
+      },
+      "fame": 16,
+      "id": "R60",
+      "image": "/assets/regions/region_60.jpg"
+    },
+    {
+      "number": 61,
+      "biome": "green",
+      "quest": {
+        "chimera": 4
+      },
+      "fame": 17,
+      "id": "R61",
+      "image": "/assets/regions/region_61.jpg"
+    },
+    {
+      "number": 62,
+      "biome": "yellow",
+      "clue": true,
+      "quest": {
+        "thistle": 3
+      },
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "blue"
+        },
+        "score": 3
+      },
+      "id": "R62",
+      "image": "/assets/regions/region_62.jpg"
+    },
+    {
+      "number": 63,
+      "biome": "green",
+      "clue": true,
+      "quest": {
+        "chimera": 2,
+        "thistle": 1
+      },
+      "fame": 15,
+      "id": "R63",
+      "image": "/assets/regions/region_63.jpg"
+    },
+    {
+      "number": 64,
+      "biome": "blue",
+      "clue": true,
+      "quest": {
+        "stone": 2,
+        "thistle": 2
+      },
+      "fame": 18,
+      "id": "R64",
+      "image": "/assets/regions/region_64.jpg"
+    },
+    {
+      "number": 65,
+      "biome": "yellow",
+      "clue": true,
+      "quest": {
+        "thistle": 3
+      },
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "green"
+        },
+        "score": 3
+      },
+      "id": "R65",
+      "image": "/assets/regions/region_65.jpg"
+    },
+    {
+      "number": 66,
+      "biome": "blue",
+      "quest": {
+        "stone": 4
+      },
+      "fame": 20,
+      "id": "R66",
+      "image": "/assets/regions/region_66.jpg"
+    },
+    {
+      "number": 67,
+      "biome": "green",
+      "clue": true,
+      "quest": {
+        "chimera": 2,
+        "thistle": 2
+      },
+      "fame": 19,
+      "id": "R67",
+      "image": "/assets/regions/region_67.jpg"
+    },
+    {
+      "number": 68,
+      "biome": "blue",
+      "quest": {
+        "stone": 5
+      },
+      "fame": 24,
+      "id": "R68",
+      "image": "/assets/regions/region_68.jpg"
+    }
+  ],
+  "sanctuaries": [
+    {
+      "tile": 1,
+      "biome": "green",
+      "fame": {
+        "per": "green",
+        "score": 1
+      },
+      "id": "S01",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_01.jpg"
+    },
+    {
+      "tile": 2,
+      "biome": "red",
+      "fame": {
+        "per": "red",
+        "score": 1
+      },
+      "id": "S02",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_02.jpg"
+    },
+    {
+      "tile": 3,
+      "biome": "blue",
+      "fame": {
+        "per": "blue",
+        "score": 1
+      },
+      "id": "S03",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_03.jpg"
+    },
+    {
+      "tile": 4,
+      "biome": "yellow",
+      "fame": {
+        "per": "yellow",
+        "score": 1
+      },
+      "id": "S04",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_04.jpg"
+    },
+    {
+      "tile": 5,
+      "biome": "colorless",
+      "fame": {
+        "per": {
+          "region1": "blue",
+          "region2": "yellow"
+        },
+        "score": 1
+      },
+      "id": "S05",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_05.jpg"
+    },
+    {
+      "tile": 6,
+      "biome": "colorless",
+      "fame": {
+        "per": {
+          "region1": "green",
+          "region2": "red"
+        },
+        "score": 1
+      },
+      "id": "S06",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_06.jpg"
+    },
+    {
+      "tile": 7,
+      "biome": "colorless",
+      "fame": {
+        "per": {
+          "region1": "red",
+          "region2": "yellow"
+        },
+        "score": 1
+      },
+      "id": "S07",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_07.jpg"
+    },
+    {
+      "tile": 8,
+      "biome": "colorless",
+      "fame": {
+        "per": {
+          "region1": "yellow",
+          "region2": "green"
+        },
+        "score": 1
+      },
+      "id": "S08",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_08.jpg"
+    },
+    {
+      "tile": 9,
+      "biome": "colorless",
+      "fame": {
+        "per": {
+          "region1": "green",
+          "region2": "blue"
+        },
+        "score": 1
+      },
+      "id": "S09",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_09.jpg"
+    },
+    {
+      "tile": 10,
+      "biome": "colorless",
+      "fame": {
+        "per": {
+          "region1": "red",
+          "region2": "blue"
+        },
+        "score": 1
+      },
+      "id": "S10",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_10.jpg"
+    },
+    {
+      "tile": 11,
+      "biome": "blue",
+      "wonders": {
+        "chimera": 1
+      },
+      "id": "S11",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_11.jpg"
+    },
+    {
+      "tile": 12,
+      "biome": "blue",
+      "wonders": {
+        "stone": 1
+      },
+      "id": "S12",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_12.jpg"
+    },
+    {
+      "tile": 13,
+      "biome": "blue",
+      "wonders": {
+        "thistle": 1
+      },
+      "id": "S13",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_13.jpg"
+    },
+    {
+      "tile": 14,
+      "biome": "green",
+      "wonders": {
+        "chimera": 1
+      },
+      "id": "S14",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_14.jpg"
+    },
+    {
+      "tile": 15,
+      "biome": "green",
+      "wonders": {
+        "stone": 1
+      },
+      "id": "S15",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_15.jpg"
+    },
+    {
+      "tile": 16,
+      "biome": "green",
+      "clue": true,
+      "id": "S16",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_16.jpg"
+    },
+    {
+      "tile": 17,
+      "biome": "red",
+      "wonders": {
+        "chimera": 1
+      },
+      "id": "S17",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_17.jpg"
+    },
+    {
+      "tile": 18,
+      "biome": "red",
+      "wonders": {
+        "thistle": 1
+      },
+      "id": "S18",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_18.jpg"
+    },
+    {
+      "tile": 19,
+      "biome": "red",
+      "wonders": {
+        "stone": 1
+      },
+      "id": "S19",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_19.jpg"
+    },
+    {
+      "tile": 20,
+      "biome": "yellow",
+      "wonders": {
+        "stone": 1
+      },
+      "id": "S20",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_20.jpg"
+    },
+    {
+      "tile": 21,
+      "biome": "yellow",
+      "clue": true,
+      "id": "S21",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_21.jpg"
+    },
+    {
+      "tile": 22,
+      "biome": "yellow",
+      "fame": {
+        "per": "colorSet",
+        "score": 4
+      },
+      "id": "S22",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_22.jpg"
+    },
+    {
+      "tile": 23,
+      "biome": "yellow",
+      "fame": {
+        "per": "clue",
+        "score": 1
+      },
+      "id": "S23",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_23.jpg"
+    },
+    {
+      "tile": 24,
+      "biome": "colorless",
+      "fame": 5,
+      "id": "S24",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_24.jpg"
+    },
+    {
+      "tile": 25,
+      "biome": "blue",
+      "clue": true,
+      "id": "S25",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_25.jpg"
+    },
+    {
+      "tile": 26,
+      "biome": "colorless",
+      "clue": true,
+      "wonders": {
+        "stone": 1
+      },
+      "id": "S26",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_26.jpg"
+    },
+    {
+      "tile": 27,
+      "biome": "colorless",
+      "clue": true,
+      "wonders": {
+        "chimera": 1
+      },
+      "id": "S27",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_27.jpg"
+    },
+    {
+      "tile": 28,
+      "biome": "colorless",
+      "clue": true,
+      "wonders": {
+        "thistle": 1
+      },
+      "id": "S28",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_28.jpg"
+    },
+    {
+      "tile": 29,
+      "biome": "colorless",
+      "fame": {
+        "per": "thistle",
+        "score": 2
+      },
+      "id": "S29",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_29.jpg"
+    },
+    {
+      "tile": 30,
+      "biome": "colorless",
+      "fame": {
+        "per": "stone",
+        "score": 2
+      },
+      "id": "S30",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_30.jpg"
+    },
+    {
+      "tile": 31,
+      "biome": "colorless",
+      "fame": {
+        "per": "chimera",
+        "score": 2
+      },
+      "id": "S31",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_31.jpg"
+    },
+    {
+      "tile": 32,
+      "biome": "colorless",
+      "fame": {
+        "per": "clue",
+        "score": 2
+      },
+      "id": "S32",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_32.jpg"
+    },
+    {
+      "tile": 33,
+      "biome": "colorless",
+      "clue": true,
+      "fame": {
+        "per": "colorSet",
+        "score": 4
+      },
+      "id": "S33",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_33.jpg"
+    },
+    {
+      "tile": 34,
+      "biome": "green",
+      "fame": {
+        "per": "night",
+        "score": 1
+      },
+      "id": "S34",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_34.jpg"
+    },
+    {
+      "tile": 35,
+      "biome": "colorless",
+      "wonders": {
+        "stone": 1
+      },
+      "fame": {
+        "per": "night",
+        "score": 1
+      },
+      "id": "S35",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_35.jpg"
+    },
+    {
+      "tile": 36,
+      "biome": "colorless",
+      "wonders": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "clue",
+        "score": 1
+      },
+      "id": "S36",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_36.jpg"
+    },
+    {
+      "tile": 37,
+      "biome": "colorless",
+      "wonders": {
+        "stone": 1
+      },
+      "fame": {
+        "per": "clue",
+        "score": 1
+      },
+      "id": "S37",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_37.jpg"
+    },
+    {
+      "tile": 38,
+      "biome": "colorless",
+      "clue": true,
+      "fame": {
+        "per": "clue",
+        "score": 1
+      },
+      "id": "S38",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_38.jpg"
+    },
+    {
+      "tile": 39,
+      "biome": "colorless",
+      "wonders": {
+        "stone": 1
+      },
+      "fame": {
+        "per": "stone",
+        "score": 1
+      },
+      "id": "S39",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_39.jpg"
+    },
+    {
+      "tile": 40,
+      "biome": "colorless",
+      "wonders": {
+        "chimera": 1
+      },
+      "fame": {
+        "per": "chimera",
+        "score": 1
+      },
+      "id": "S40",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_40.jpg"
+    },
+    {
+      "tile": 41,
+      "biome": "colorless",
+      "wonders": {
+        "thistle": 1
+      },
+      "fame": {
+        "per": "thistle",
+        "score": 1
+      },
+      "id": "S41",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_41.jpg"
+    },
+    {
+      "tile": 42,
+      "biome": "red",
+      "night": true,
+      "id": "S42",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_42.jpg"
+    },
+    {
+      "tile": 43,
+      "biome": "colorless",
+      "night": true,
+      "wonders": {
+        "stone": 1
+      },
+      "id": "S43",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_43.jpg"
+    },
+    {
+      "tile": 44,
+      "biome": "colorless",
+      "night": true,
+      "wonders": {
+        "chimera": 1
+      },
+      "id": "S44",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_44.jpg"
+    },
+    {
+      "tile": 45,
+      "biome": "colorless",
+      "night": true,
+      "wonders": {
+        "thistle": 1
+      },
+      "id": "S45",
+      "image": "/assets/sanctuaries/by_tile/sanctuary_45.jpg"
+    }
+  ]
+}

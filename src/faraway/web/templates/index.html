@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faraway — Pass &amp; Play</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">Faraway</span>
+        <span class="brand-sub">Pass &amp; Play</span>
+      </div>
+      <div id="meta" class="meta"></div>
+    </header>
+
+    <main>
+      <section id="lobby" class="panel lobby">
+        <h1>Explore Alula</h1>
+        <p class="lede">Two explorers, one screen. Hide your hand, climb toward Sanctuaries, then walk back for fame.</p>
+        <form id="start-form" class="start-form">
+          <label>Player 1 <input name="player1" value="Explorer A" maxlength="40" required /></label>
+          <label>Player 2 <input name="player2" value="Explorer B" maxlength="40" required /></label>
+          <label>Seed <input name="seed" type="number" placeholder="optional" /></label>
+          <button type="submit" class="btn primary">Start game</button>
+        </form>
+        <p id="lobby-note" class="muted"></p>
+      </section>
+
+      <section id="privacy" class="panel privacy hidden">
+        <div class="privacy-card">
+          <p class="eyebrow">Pass the device</p>
+          <h2 id="privacy-title">Ready?</h2>
+          <p id="privacy-body">Make sure only the active player can see the next screen.</p>
+          <button id="privacy-btn" class="btn primary">I'm ready</button>
+        </div>
+      </section>
+
+      <section id="table" class="table hidden">
+        <p id="banner" class="banner"></p>
+
+        <div class="board-grid">
+          <section class="zone market-zone">
+            <h3>Market</h3>
+            <div id="market" class="card-row"></div>
+          </section>
+
+          <section class="zone hand-zone">
+            <h3 id="hand-title">Your hand</h3>
+            <div id="hand" class="card-row"></div>
+          </section>
+
+          <section class="zone offer-zone hidden" id="offer-zone">
+            <h3>Sanctuary offer — keep one</h3>
+            <div id="offer" class="card-row"></div>
+          </section>
+        </div>
+
+        <div id="players" class="players"></div>
+
+        <div id="scoreboard" class="scoreboard hidden"></div>
+
+        <div class="footer-actions">
+          <button id="new-game-btn" class="btn ghost">New game</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="zoom">
+      <form method="dialog">
+        <button class="zoom-close" value="close">Close</button>
+      </form>
+      <img id="zoom-img" alt="Card detail" />
+      <p id="zoom-caption"></p>
+    </dialog>
+  </div>
+  <script src="/static/app.js" type="module"></script>
+</body>
+</html>
