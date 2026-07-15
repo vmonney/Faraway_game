@@ -108,9 +108,14 @@ def test_full_seeded_game_eight_rounds() -> None:
         p2_card = state.players[1].hand[0]
         state = choose_region(state, p2_card)
 
-        # End of exploration: market pick then sanctuary, ascending duration.
-        while state.phase.value in {"pick_region", "choose_sanctuary"}:
-            if state.phase.value == "pick_region":
+        # End of exploration: privacy handoff → market pick then sanctuary.
+        while state.phase.value in {"privacy", "pick_region", "choose_sanctuary"}:
+            if state.phase.value == "privacy":
+                # Round transition also lands on privacy; stop when next round starts.
+                if state.privacy_next.value == "choose_region":
+                    break
+                state = acknowledge_privacy(state)
+            elif state.phase.value == "pick_region":
                 state = pick_market_region(state, state.market[0])
             else:
                 player = state.active_player
@@ -118,6 +123,7 @@ def test_full_seeded_game_eight_rounds() -> None:
 
         if round_no < 8:
             assert state.round == round_no + 1
+            assert state.phase.value == "privacy"
         else:
             assert state.phase.value == "game_over"
 
@@ -143,6 +149,34 @@ def test_no_sanctuary_round_one() -> None:
     state = choose_region(state, state.players[0].hand[0])
     state = acknowledge_privacy(state)
     state = choose_region(state, state.players[1].hand[0])
-    # After round 1 reveal, skip straight to market (or somehow not sanctuary)
+    # After round 1 reveal, privacy handoff before the first market pick.
+    assert state.phase.value == "privacy"
+    assert state.privacy_next.value == "end_turn"
+    state = acknowledge_privacy(state)
     assert state.phase.value == "pick_region"
     assert all(not p.pending_sanctuary_options for p in state.players)
+
+
+def test_privacy_before_each_market_pick() -> None:
+    state = new_game("Ada", "Bea", seed=7)
+    state = acknowledge_privacy(state)
+    state = choose_region(state, state.players[0].hand[0])
+    state = acknowledge_privacy(state)
+    state = choose_region(state, state.players[1].hand[0])
+
+    first = state.active_player.name
+    assert state.message == f"Pass the device to {first}."
+    state = acknowledge_privacy(state)
+    assert state.phase.value == "pick_region"
+    assert state.active_player.name == first
+    state = pick_market_region(state, state.market[0])
+
+    # Second player's market turn also requires a privacy handoff.
+    assert state.phase.value == "privacy"
+    assert state.privacy_next.value == "end_turn"
+    second = state.active_player.name
+    assert second != first
+    assert state.message == f"Pass the device to {second}."
+    state = acknowledge_privacy(state)
+    assert state.phase.value == "pick_region"
+    assert state.active_player.name == second

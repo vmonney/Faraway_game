@@ -24,6 +24,13 @@ class Phase(StrEnum):
     GAME_OVER = "game_over"
 
 
+class PrivacyNext(StrEnum):
+    """What happens after the player acknowledges the privacy handoff."""
+
+    CHOOSE_REGION = "choose_region"
+    END_TURN = "end_turn"
+
+
 @dataclass
 class PlayerState:
     id: str
@@ -47,6 +54,7 @@ class GameState:
     discard: list[int] = field(default_factory=list)
     round: int = 1
     phase: Phase = Phase.PRIVACY
+    privacy_next: PrivacyNext = PrivacyNext.CHOOSE_REGION
     active_player_index: int = 0
     turn_order: list[int] = field(default_factory=list)
     sanctuary_queue: list[int] = field(default_factory=list)
@@ -91,6 +99,7 @@ def new_game(
         sanctuary_deck=sanctuary_deck,
         market=market,
         phase=Phase.PRIVACY,
+        privacy_next=PrivacyNext.CHOOSE_REGION,
         active_player_index=0,
         message=f"Pass the device to {players[0].name}.",
     )
@@ -98,6 +107,9 @@ def new_game(
 
 def acknowledge_privacy(state: GameState) -> GameState:
     _require(state.phase == Phase.PRIVACY, "Not waiting for a privacy handoff")
+    if state.privacy_next == PrivacyNext.END_TURN:
+        _begin_end_of_exploration_turn(state)
+        return state
     state.phase = Phase.CHOOSE_REGION
     player = state.active_player
     state.message = f"{player.name}: choose a Region from your hand."
@@ -115,6 +127,7 @@ def choose_region(state: GameState, region_number: int) -> GameState:
 
     if not all(p.ready for p in state.players):
         state.phase = Phase.PRIVACY
+        state.privacy_next = PrivacyNext.CHOOSE_REGION
         state.active_player_index = 1 if state.active_player_index == 0 else 0
         next_player = state.active_player
         state.message = f"Pass the device to {next_player.name}."
@@ -187,7 +200,13 @@ def _start_next_end_turn(state: GameState) -> None:
 
     state.active_player_index = state.turn_order.pop(0)
     player = state.active_player
+    state.phase = Phase.PRIVACY
+    state.privacy_next = PrivacyNext.END_TURN
+    state.message = f"Pass the device to {player.name}."
 
+
+def _begin_end_of_exploration_turn(state: GameState) -> None:
+    player = state.active_player
     if state.round < ROUNDS:
         state.phase = Phase.PICK_REGION
         state.message = f"{player.name}: take a Region from the market."
@@ -226,6 +245,7 @@ def _finish_round_or_game(state: GameState) -> None:
         if state.region_deck
     ]
     state.phase = Phase.PRIVACY
+    state.privacy_next = PrivacyNext.CHOOSE_REGION
     state.active_player_index = 0
     state.message = f"Round {state.round}. Pass the device to {state.players[0].name}."
 

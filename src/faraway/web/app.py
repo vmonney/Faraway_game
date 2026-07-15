@@ -15,6 +15,7 @@ from pydantic import BaseModel, Field
 from faraway.domain.game import (
     GameState,
     Phase,
+    PrivacyNext,
     acknowledge_privacy,
     choose_region,
     choose_sanctuary,
@@ -74,6 +75,7 @@ def _persist(state: GameState) -> None:
         "seed": state.seed,
         "round": state.round,
         "phase": state.phase.value,
+        "privacy_next": state.privacy_next.value,
         "active_player_index": state.active_player_index,
         "turn_order": state.turn_order,
         "sanctuary_queue": state.sanctuary_queue,
@@ -139,6 +141,7 @@ def _load_or_none() -> GameState | None:
         discard=raw.get("discard", []),
         round=raw["round"],
         phase=Phase(raw["phase"]),
+        privacy_next=PrivacyNext(raw.get("privacy_next", PrivacyNext.CHOOSE_REGION)),
         active_player_index=raw["active_player_index"],
         turn_order=raw.get("turn_order", []),
         sanctuary_queue=raw.get("sanctuary_queue", []),
